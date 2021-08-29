@@ -1,0 +1,150 @@
+import { Link } from 'gatsby'
+import { FiInfo } from 'react-icons/fi'
+import { Counter, LikeButton } from '../components/complete'
+
+<section className="mdx-page">
+
+## my very first mdx file
+
+**I'm baby gastropub schlitz celiac tattooed. Hexagon poutine fanny pack XOXO tote bag ennui church-key deep v jean shorts sriracha before they sold out swag.** Glossier etsy pickled tumblr fingerstache taxidermy butcher austin DIY portland shoreditch snackwave. _Palo santo cray cold-pressed raw denim seitan, thundercats bicycle rights_ paleo ennui hoodie 8-bit. Pitchfork small batch hammock tousled, thundercats tacos chicharrones pop-up. _Craft beer paleo master cleanse kombucha. Aesthetic edison bulb mixtape franzen 8-bit, lo-fi tote bag locavore hoodie._
+
+#### this is heading four
+
+<div className="code">
+
+```js
+const firstName = 'Dee'
+const secondName = 'Kayy'
+```
+
+</div>
+
+<div className="nice-text">
+  <h3>nice text</h3>
+  <FiInfo className="nice-text-icon" />
+  Glossier etsy pickled tumblr fingerstache taxidermy butcher austin DIY
+  portland shoreditch snackwave. _Palo santo cray cold-pressed raw denim seitan,
+  thundercats bicycle rights_ paleo ennui hoodie 8-bit. Pitchfork small batch
+  hammock tousled, thundercats tacos chicharrones pop-up.
+</div>
+
+<h2>react components</h2>
+
+<Counter />
+
+```jsx
+import React from 'react'
+import styled from 'styled-components'
+import { AiOutlineLike } from 'react-icons/ai'
+const LikeButton = () => {
+  const [value, setValue] = React.useState(0)
+  return (
+    <Wrapper>
+      <div>
+        <button onClick={() => setValue(value + 1)}>
+          <AiOutlineLike />
+        </button>
+        <p>
+          Liked the post?
+          <br />
+          Click thumbs up few times
+        </p>
+      </div>
+      <span>+{value}</span>
+    </Wrapper>
+  )
+}
+```
+
+<LikeButton />
+
+<h2> regular h2 </h2>
+<h2 title="true"> title prop h2 </h2>
+
+<h4>inline code h4</h4>
+
+`console.log('hello friend')`
+
+<h4>blockquote element</h4>
+
+<blockquote display="default">
+  Glossier etsy pickled tumblr fingerstache taxidermy butcher austin DIY
+  portland shoreditch snackwav
+</blockquote>
+
+<blockquote display="info">
+  Glossier etsy pickled tumblr fingerstache taxidermy butcher austin DIY
+  portland shoreditch snackwav
+</blockquote>
+
+<blockquote display="warning">
+  Glossier etsy pickled tumblr fingerstache taxidermy butcher austin DIY
+  portland shoreditch snackwav
+</blockquote>
+
+<blockquote>
+  Glossier etsy pickled tumblr fingerstache taxidermy butcher austin DIY
+  portland shoreditch snackwav
+</blockquote>
+
+#### Javascript
+
+```js
+// comments
+const name = 'john'
+const channel = 'coding addict'
+
+function featuredProducts(data) {
+  return data.filter(item => {
+    return item.featured === true
+  })
+}
+featuredProducts()
+```
+
+#### JSX
+
+```jsx
+import React from 'react'
+
+const Counter = () => {
+  const [count, setCount] = React.useState(0)
+  return (
+    <section className="counter">
+      <h4>show some love to MDX</h4>
+      <h4>likes {count}</h4>
+      <button className="btn btn-danger" onClick={() => setCount(count + 1)}>
+        i like mdx
+      </button>
+    </section>
+  )
+}
+export default Counter
+```
+
+#### HTML
+
+```html
+<h1>hello world</h1>
+<p class="random">random text</p>
+<section class="contact">
+  <div class="title">
+    <h1>contact us</h1>
+  </div>
+</section>
+```
+
+#### CSS
+
+```css
+max-width: 500px;
+border-radius: var(--radius);
+padding: 1rem 1.5rem;
+background: var(--clr-grey-10);
+text-align: center;
+```
+
+<Link to="/posts" className="btn center-btn">
+  all posts
+</Link>
+</section>
