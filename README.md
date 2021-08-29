@@ -6,5 +6,5 @@ For more info regarding a specific project, navigate to that project's directory
 
 ## Here are the live previews:
 
-1. [Portfolio Website](https://portfoliowebsite-gastby-dk.netlify.app/)
-2. [MDX Blog](https://mdxblog-gastby-dk.netlify.app/)
+1. [Portfolio Website](https://portfoliowebsite-gatsby-dk.netlify.app/)
+2. [MDX Blog](https://mdxblog-gatsby-dk.netlify.app/)
