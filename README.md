@@ -8,3 +8,4 @@ For more info regarding a specific project, navigate to that project's directory
 
 1. [Portfolio Website](https://portfoliowebsite-gatsby-dk.netlify.app/)
 2. [MDX Blog](https://mdxblog-gatsby-dk.netlify.app/)
+3. [Design Site](https://designsite-gatsby-dk.netlify.app/)
