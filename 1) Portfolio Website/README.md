@@ -12,7 +12,7 @@ A portfolio website created with gatsby.
 - React Hooks
 - CSS
 - GraphQL
-- Starpi as CMS
+- Strapi as CMS
 
 ## How to Run?
 
